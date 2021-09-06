@@ -5,6 +5,7 @@
 
 
  <h1>home</h1>
+ <h1>${sessionScope.principal.username }</h1>
 
  
  <%@include file="layout/footer.jsp" %>
