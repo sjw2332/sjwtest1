@@ -1,12 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-</head>
-<body>
+<%@include file="../layout/header.jsp" %>
 
-</body>
-</html>
+	<div class="container" style="margin-top: 100px;">
+		<form action="/login" method="post">
+			<div class="form-group">
+				<input type="text"
+					class="form-control" id="username" placeholder="Enter account"
+					name="username">
+			</div>
+			<div class="form-group">
+				<input type="password"
+					class="form-control" id="password" placeholder="Enter password"
+					name="password">
+			</div>
+	
+			<button type="submit" class="btn btn-primary">로그인</button>
+		</form>
+	</div>
+
+<%@include file="../layout/footer.jsp" %>

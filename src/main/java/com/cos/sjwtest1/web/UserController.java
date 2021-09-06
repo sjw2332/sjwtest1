@@ -10,4 +10,13 @@ public class UserController {
 	String home() {
 		return "home";
 	}
+
+	@GetMapping("/joinForm")
+	String joinForm() {
+		return "user/joinForm";
+	}
+	@GetMapping("/loginForm")
+	String loginForm() {
+		return "user/loginForm";
+	}
 }
