@@ -8,17 +8,17 @@
 			<div class="form-group">
 				<input type="text"
 					class="form-control" id="username" placeholder="Enter account"
-					name="username">
+					name="username" required>
 			</div>
 			<div class="form-group">
 				 <input type="password"
 					class="form-control" id="password" placeholder="Enter password"
-					name="password">
+					name="password" required>
 			</div>
 			<div class="form-group">
 				<input type="email"
 					class="form-control" id="email" placeholder="Enter email"
-					name="email">
+					name="email" required>
 			</div>
 	
 			<button type="submit" class="btn btn-primary">회원가입</button>

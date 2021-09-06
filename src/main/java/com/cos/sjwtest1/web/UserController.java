@@ -1,5 +1,7 @@
 package com.cos.sjwtest1.web;
 
+import java.io.PrintWriter;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
@@ -66,6 +68,7 @@ public class UserController {
 		User userEntity = userRepository.mLogin(dto.getUsername(), dto.getPassword());
 		
 		if(userEntity==null) {
+			
 			return "redirect:/loginForm";
 		} else {
 			session.setAttribute("principal", userEntity);

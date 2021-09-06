@@ -8,12 +8,12 @@
 			<div class="form-group">
 				<input type="text"
 					class="form-control" id="username" placeholder="Enter account"
-					name="username">
+					name="username" required>
 			</div>
 			<div class="form-group">
 				<input type="password"
 					class="form-control" id="password" placeholder="Enter password"
-					name="password">
+					name="password" required>
 			</div>
 	
 			<button type="submit" class="btn btn-primary">로그인</button>
